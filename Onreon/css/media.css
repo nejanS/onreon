@@ -1,0 +1,42 @@
+/* RESPONSIVE XXLARGE */
+@media screen and (min-width: 1400px) {
+}
+
+/* RESPONSIVE XLARGE */
+@media screen and (max-width: 1200px) {
+}
+
+/* RESPONSIVE LARGE */
+@media screen and (max-width: 992px) {
+}
+
+/* RESPONSIVE MEDIUM */
+@media screen and (max-width: 768px) {
+  /* HEADER START */
+  .navbar .container-md a {
+    padding: 8px 15px;
+  }
+  .content1 a {
+    padding: 20px 30px !important;
+  }
+  .content1 a .not {
+    right: 5px;
+  }
+  /* HEADER END */
+
+  /* MAIN START */
+  /* accordion start */
+
+  /* accordion end */
+  /* MAIN END */
+}
+
+/* RESPONSIVE SMALL */
+@media screen and (max-width: 576px) {
+  .content1 a {
+    padding: 20px 20px !important;
+  }
+  .content1 a .not {
+    right: 1px;
+  }
+}

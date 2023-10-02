@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+}
+/* HEADER START */
+.navbar {
+  padding: 0px !important;
+  border-bottom: 2px solid #7d1b7a;
+}
+.navbar .container-md {
+  justify-content: center !important;
+}
+.navbar .container-md .store {
+  position: relative;
+  padding: 8px 25px;
+}
+.navbar .container-md .store:focus:before {
+  content: " ";
+  position: absolute;
+  left: 41px;
+  bottom: -10px;
+  border-style: solid;
+  border-width: 0 15px 15px 15px;
+  border-color: transparent transparent #fff transparent;
+  rotate: 180deg;
+}
+.navbar .container-md .store:hover:nth-child(2):before {
+  bottom: -13px;
+}
+.not {
+  font-size: 0.65em;
+  width: 20px !important;
+  height: 20px !important;
+  background: #f5b025;
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  border-radius: 50%;
+}
+.navbar .store:hover .content1 {
+  display: flex;
+}
+.navbar .store img:hover .navbar {
+  border: none;
+}
+/* HEADER END */
+
+/* MAIN START */
+.messages-area {
+}
+/* messages area start */
+.messages-area .text-area {
+  padding: 18px 24px 0 24px;
+}
+.fa-circle-user {
+  font-size: 25px;
+}
+.messages-area .bubble {
+  background: #fff;
+  border-radius: 8px;
+}
+.messages-area .customer-message .bubble::before {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  border-style: solid;
+  border-width: 15px 0px 15px 15px;
+  border-color: transparent transparent #fff transparent;
+  rotate: 135deg;
+}
+.messages-area .services .icon-circle {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-color: #4f4f4f;
+  border-radius: 50%;
+}
+.fa-store {
+  font-size: 14px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+.messages-area .services .bubble {
+  background: #f5b025;
+}
+.messages-area .services .bubble::before {
+  content: " ";
+  position: absolute;
+  right: 40px;
+  border-style: solid;
+  border-width: 15px 0px 15px 15px;
+  border-color: transparent transparent #f5b025 transparent;
+  rotate: -45deg;
+}
+.messages-area .message {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  padding: 0 24px;
+}
+.messages-area .message .btn {
+  background: #1d3256;
+  color: #fff;
+}
+.messages-area .message input {
+  height: 36px;
+  padding-left: 15px !important;
+  border: 1px solid #9e9e9e85 !important;
+  border-radius: 5px;
+}
+/* messages area end */
+
+/* customer contanier start */
+.customer-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  max-height: 0;
+}
+.store.active + .customer-list{
+  display: flex;
+}
+.customer-list .customer {
+  height: 115px;
+  border: 1px solid #9e9e9e85;
+  border-left: 2px solid #f5b025 !important;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 18px 0 0 0;
+}
+.customer-list .information {
+  width: 100% !important;
+}
+.customer-list .customer-name {
+  line-height: 1.5 !important;
+}
+.customer .category {
+  background: #7d1b7a;
+  color: #fff;
+  padding: 6px 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.customer .detail-box .fa-envelope {
+  font-size: 30px;
+}
+.customer .detail-box{
+  cursor: pointer;
+}
+.customer .detail-box .not {
+  font-size: 0.7em;
+  font-weight: bold;
+  width: 17px !important;
+  height: 17px !important;
+  background: #1d3256;
+  color: #fff;
+  bottom: 10px !important;
+  top: -5px;
+  right: -9px;
+  border-radius: 50%;
+}
+/* customer contanier end */
+/* messages detail start */
+.messages-area{
+  display: none;
+  width: 100%;
+  background: #f3f3f3;
+  border: 2px solid #f5b025 ;
+  border-top: 0px;
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
+  margin: auto;
+  margin-top: 5px;
+  padding: 15px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.custom-file-upload {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+/* messages detail end */
+/* MAIN END */

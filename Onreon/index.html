@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+  <title>Gelen Sorular</title>
+</head>
+
+<body>
+  <header>
+    <div class="navbar navbar-light bg-light">
+      <div class="container-md">
+        <a href="#" class="store text-dark fw-bold fs-5">
+          <img src="img/trendyolyuvarlak.png" alt="trendyol" width="60px" />
+          <span class="not bg-danger">1</span>
+        </a>
+        <a href="#" class="store text-dark fw-bold fs-5">
+          <img src="img/hb.svg" alt="hepsiburada" width="55px" />
+          <span class="not bg-danger">5</span>
+        </a>
+        <a href="#" class="store text-dark fw-bold fs-5">
+          <img src="img/n11yuvarlak.png" alt="n11" width="60px" />
+          <span class="not bg-danger">3</span>
+        </a>
+        <a href="#" class="store text-dark fw-bold fs-5">
+          <img src="img/pttavmyuvarlak.png" alt="pttavm" width="60px" />
+          <span class="not bg-danger">0</span>
+        </a>
+        <a href="#" class="store text-dark fw-bold fs-5"">
+            <img src=" img/amazon-png-logo-vector-1.png" alt="amazon" width="60px" />
+        <span class="not bg-danger">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-md p-4">
+      <ul class="customer-list position-relative p-0">
+        <li class="customer d-flex justify-content-between col-12 px-4 py-3" id="costumer1" onclick="messageClick('customer1')">
+          <div class="d-flex col-12" id="information1">
+            <div class="customer-inf col-md-9 col-6 d-flex align-items-center">
+              <i class="fas fa-circle-user me-3"></i>
+              <h1 class="customer-name fs-5 mb-0">Müşteri 1</h1>
+              <div class="product-con mx-5">
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Ürün Adı:</p>
+                  <p class="ms-2 mb-0">Ürün 1</p>
+                </div>
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Barkod:</p>
+                  <p class="ms-2 mb-0">0000000000</p>
+                </div>
+              </div>
+            </div>
+            <div class="detail col-md-3 col-6 d-flex align-items-center justify-content-end pe-md-5 pe-2">
+              <div class="category me-md-0 me-2">
+                <h2 class="m-0" style="font-size: 14px">Ürün Soruları</h2>
+              </div>
+              <div class="detail-box position-relative ms-md-4 ms-2">
+                <i class="fas fa-envelope text-warning"></i>
+                <span class="not">1</span>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <!-- messages detail -->
+        <div class="messages-area p-4" id="customer1">
+          <div class="text-area">
+            <div class="customer-message col-12 d-flex align-items-center position-relative">
+              <i class="fas fa-circle-user me-3"></i>
+              <div class="bubble">
+                <p class="m-0 p-2">
+                  Merhaba, ürün boyutları hakkında bilgi verir misiniz?
+                </p>
+                <div class="time float-end me-3" style="font-size: 0.7em">
+                  10.08 am
+                </div>
+              </div>
+            </div>
+            <div class="services col-12 position-relative">
+              <div class="d-flex flex-column">
+                <div class="d-flex justify-content-end">
+                  <div class="bubble mt-2">
+                    <p class="m-0 p-2">
+                      Merhabalar, masa boyutları 160cm-210cm şeklindedir.
+                    </p>
+                    <div class="time float-end me-3" style="font-size: 0.7em">
+                      10.10 am
+                    </div>
+                  </div>
+                  <div class="icon-circle d- ms-3 mt-2">
+                    <i class="fas fa-store text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message col-12 d-flex justify-content-between align-items-center py-3 mt-3">
+            <label for="file-upload" class="custom-file-upload">
+              <i class="far fa-images pe-2" style="font-size: 20px; cursor: pointer;"></i>
+              <input id="file-upload" type="file">
+            </label>
+
+            <input class="w-100" type="text" placeholder="Mesajınızı yazınız" />
+            <div class="col-2 btn ms-2">Gönder</div>
+          </div>
+        </div>
+
+        <li class="customer d-flex justify-content-between col-12 px-4 py-3" id="costumer2">
+          <div class="information d-flex col-12" id="information2">
+            <div class="customer-inf col-md-9 col-6 d-flex align-items-center">
+              <i class="fas fa-circle-user me-3"></i>
+              <h1 class="customer-name fs-5 mb-0">Müşteri 2</h1>
+              <div class="product-con mx-5">
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Ürün Adı:</p>
+                  <p class="ms-2 mb-0">Ürün 5</p>
+                </div>
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Barkod:</p>
+                  <p class="ms-2 mb-0">015784268</p>
+                </div>
+              </div>
+            </div>
+            <div class="detail col-md-3 col-6 d-flex align-items-center justify-content-end pe-md-5 pe-2">
+              <div class="category me-md-0 me-2">
+                <h2 class="m-0" style="font-size: 14px">Sipariş Soruları</h2>
+              </div>
+              <div class="detail-box position-relative ms-md-4 ms-2">
+                <i class="fas fa-envelope text-warning"></i>
+                <span class="not">2</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- messages detail -->
+        <div class="messages-area p-4" id="area2">
+          <div class="text-area">
+            <div class="customer-message col-12 position-relative">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-circle-user me-3"></i>
+                <div class="bubble">
+                  <p class="m-0 p-2">
+                    Merhaba, siparişi hediye paketi yapar mısınız?
+                  </p>
+                  <div class="time float-end me-3" style="font-size: 0.7em">
+                    01.08 pm
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-circle-user me-3"></i>
+                <div class="bubble">
+                  <p class="m-0 p-2">
+                    İçime bir de not yazmanızı istiyorum.
+                  </p>
+                  <div class="time float-end me-3" style="font-size: 0.7em">
+                    01.08 pm
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services col-12 position-relative">
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center justify-content-end">
+                  <div class="bubble mt-2">
+                    <p class="m-0 p-2">
+                      Merhaba, tabi hediye paketi yapıyoruz.
+                    </p>
+                    <div class="time float-end me-3" style="font-size: 0.7em">
+                      01.50 pm
+                    </div>
+                  </div>
+                  <div class="icon-circle d- ms-3 mt-2">
+                    <i class="fas fa-store text-white"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="message col-12 d-flex justify-content-between align-items-center py-3 mt-3">
+            <label for="file-upload" class="custom-file-upload">
+              <i class="far fa-images pe-2" style="font-size: 20px; cursor: pointer;"></i>
+              <input id="file-upload" type="file">
+            </label>
+
+            <input class="w-100" type="text" placeholder="Mesajınızı yazınız" />
+            <div class="col-2 btn ms-2">Gönder</div>
+          </div>
+        </div>
+
+        <li class="customer d-flex justify-content-between col-12 px-4 py-3" id="costumer3">
+          <div class="information d-flex col-12" id="information3">
+            <div class="customer-inf col-md-9 col-6 d-flex align-items-center">
+              <i class="fas fa-circle-user me-3"></i>
+              <h1 class="customer-name fs-5 mb-0">Müşteri 3</h1>
+              <div class="product-con mx-5">
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Ürün Adı:</p>
+                  <p class="ms-2 mb-0">Ürün 2</p>
+                </div>
+                <div class="d-flex">
+                  <p class="text-decoration-underline mb-0">Barkod:</p>
+                  <p class="ms-2 mb-0">01258743698</p>
+                </div>
+              </div>
+            </div>
+            <div class="detail col-md-3 col-6 d-flex align-items-center justify-content-end pe-md-5 pe-2">
+              <div class="category me-md-0 me-2">
+                <h2 class="m-0" style="font-size: 14px">Şikayetler</h2>
+              </div>
+              <div class="detail-box position-relative ms-md-4 ms-2">
+                <i class="fas fa-envelope text-warning"></i>
+                <span class="not">1</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- messages detail -->
+        <div class="messages-area p-4" id="area3">
+          <div class="text-area">
+            <div class="customer-message col-12 position-relative">
+              <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-circle-user me-3"></i>
+                <div class="bubble">
+                  <p class="m-0 p-2">
+                    Sipariş verdiğim ürün üzeri çizikler halinde geldi
+                  </p>
+                  <div class="time float-end me-3" style="font-size: 0.7em">
+                    01.08 pm
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="message col-12 d-flex justify-content-between align-items-center py-3 mt-3">
+              <label for="file-upload" class="custom-file-upload">
+                <i class="far fa-images pe-2" style="font-size: 20px; cursor: pointer;"></i>
+                <input id="file-upload" type="file">
+              </label>
+              <input class="w-100" type="text" placeholder="Mesajınızı yazınız" />
+              <div class="col-2 btn ms-2">Gönder</div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </main>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
